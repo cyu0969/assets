@@ -1,0 +1,60 @@
+
+
+.chart {
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 90%;
+    margin: auto -15px 30px;
+  }
+  
+  .chart-code {
+    cursor: pointer;
+  }
+  
+  .chart-code:hover {
+    color: salmon;
+  }
+  
+  .progress-wrapper {
+      display: none;
+    max-width: 350px;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    text-transform: uppercase;
+  }
+  
+  [type="range"] {
+    width: 200px;
+  }
+  
+  .chart-box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 5px 30px 30px;
+    margin: 20px;
+    width: 260px;
+    height: 306px;
+  }
+  
+  
+  [data-pie-index="2"] {
+    position: relative;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px 10px #a2caff;
+    -o-box-shadow: inset 0 0 25px 10px #a2caff;
+    -webkit-box-shadow: inset 0 0 25px 10px #a2caff;
+  }
+  
+  [data-pie-index="16"] {
+    position: relative;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px 10px #f50057;
+    -o-box-shadow: inset 0 0 25px 10px #f50057;
+    -webkit-box-shadow: inset 0 0 25px 10px #f50057;
+  }
+  
+  

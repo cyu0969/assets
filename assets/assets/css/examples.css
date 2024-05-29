@@ -1,0 +1,593 @@
+@import "reset.css"
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0; }
+a{ color: rgba(0,0,0,0.5);	text-decoration:none; }
+table { border-spacing: 0; }
+fieldset,img { border: 0; }
+img{ max-width: 100%; }
+address,caption,cite,code,dfn,em,strong,th,var { font-weight: normal; font-style: normal; }
+strong{	font-weight: bold; }
+ol,ul { list-style: none; margin:0; padding:0; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 100%; margin:0; padding:0; color:#444; }
+q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Noto Sans KR',sans-serif;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+}
+.section{
+	text-align:center;
+}
+.section a:hover{ color: black;}
+.w-100{ width: 100vw;}
+.h-100{ height: 100vh;}
+
+#menu li {
+	-webkit-display:inline-block;
+	-moz-display:inline-block;
+	-o-display:inline-block;
+	-ms-display:inline-block;
+	display:inline-block;
+
+	margin: 10px;
+	color: #000;
+
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+
+	-webkit-background:#fff;
+	-webkit-background:rgba(255,255,255, 0.5);
+	-moz-background:#fff;
+	-moz-background:rgba(255,255,255, 0.5);
+	-o-background:#fff;
+	-o-background:rgba(255,255,255, 0.5);
+
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	-webkit-background:#666;
+	-webkit-background:rgba(0,0,0, 0.5);
+	-moz-background:#666;
+	-moz-background:rgba(0,0,0, 0.5);
+	-o-background:#666;
+	-o-background:rgba(0,0,0, 0.5);
+
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+	-webkit-background:rgba(255,255,255, 0.8);
+	-moz-background:rgba(255,255,255, 0.8);
+	-o-background:rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+
+	display:block;
+	-webkit-display:block;
+	-moz-display:block;
+	-o-display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:20px;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+
+    display: flex;
+	-webkit-display:flex;
+	-moz-display:flex;
+	-o-display:flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#fp-nav ul li a span{
+	background-color: #fff;
+}
+#fp-nav ul li .fp-tooltip{
+	color: #fff;
+}
+
+
+
+
+/* Portfolio CSS #section0 >> introduction
+ * ------------------------------------------------------------------------------ */
+#myVideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-color: black; 
+	background-image: url(../img/flowers.mp4);
+	background-position: center center;
+	background-size: contain;
+
+	object-fit: cover; 
+	-ms-object-fit: cover; 
+
+	z-index:3;
+}
+#section0 .layer{
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+#section0{
+	overflow: hidden;
+}
+video::-webkit-media-controls {
+	display:none !important;
+}
+#section0 .layer h1{
+	font-family: 'DM Serif Display';
+    font-style: italic;
+	color: #fff;
+	font-size: 8em;
+}
+#section0 .layer p{
+	color: #fff;
+	font-size: 23px;
+	font-weight: 300;
+}
+
+
+
+/* Portfolio CSS #section1 >> profile
+ * ------------------------------------------------------------------------------ */
+ .profile{ position: relative;}
+ .profile .leftName{
+	width: 100%;
+	height: 100vh;
+	color: rgba(255,255,255, 0.5);
+
+	writing-mode: vertical-rl;
+	-o-writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+
+	text-orientation: sideways;
+	-ms-text-orientation: sideways;
+	-o-text-orientation: sideways;
+	-webkit-text-orientation: sideways;
+
+	letter-spacing: 3px;
+	-o-letter-spacing: 3px;
+	-webkit-letter-spacing: 3px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #485F51;
+	font-family: 'Roboto', sans-serif;
+ }
+ .profile .leftName::before{
+	content: '';
+	border-right: 1px solid rgba(255,255,255, 0.5);
+	position: absolute;
+	height: 39%;
+	top: 0;
+}
+ .profile .leftName::after{
+	content: '';
+	border-right: 1px solid rgba(255,255,255, 0.5);
+	position: absolute;
+	height: 39%;
+	bottom: 0;
+}
+.profile .contactBox{
+	padding-top: 9em;
+}
+.profile .titleBox{
+	text-align: left;
+	padding-left: 10rem;
+	font-family: 'Roboto', sans-serif;
+}
+.profile .titleBadge{
+	width: 100px;
+    height: 25px;
+    color: #fff;
+    background-color: #485F51;
+    border-radius: 50px;
+    font-size: 0.8rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile .titleName{
+	font-size: 4.5em;
+	font-weight: 700;
+	color: #aa9f92;
+	font-family: 'DM Serif Display';
+}
+.profile .titleIntro{
+	color: rgba(255,255,255, 0.8);
+	font-size: 1em;
+	font-weight: 200;
+	padding-bottom: 2rem;
+	font-family: 'Noto Sans KR',sans-serif;
+}
+.profile .infoBox dl dt{
+	font-size: 1em;
+    font-weight: 600;
+    color: #999;
+	padding-top: 20px;
+	font-family: 'Noto Sans KR',sans-serif;
+}
+.profile .infoBox dl dd{
+	font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 300;
+	color: #fff;
+	font-family: 'Noto Sans KR',sans-serif;
+}
+.profile .infoBox dl dd a{
+	color: #fff;
+}
+.profile .infoBox dl dd a:hover{
+	color: #aa9f92;
+}
+.profile .myPicture{
+	max-height: 500px;
+	border-radius: 25px;
+	-o-border-radius: 25px;
+	-webkit-border-radius: 25px;
+}
+.profile .myBox{
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+	padding-left: 10rem;
+	padding-bottom: 20px;
+	background-color: #CDC3BA;
+	font-family: 'Roboto', sans-serif;
+}
+.profile .myBox dl dd{
+	color: #111;
+	font-weight: 400;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 640px) {
+	.profile .contactBox {
+		padding-top: 4em;
+	}
+
+	.profile .titleBox {
+		padding-left: 3rem;
+	}
+
+	.profile .titleName{
+		position: relative;
+		flex-direction: column;
+		font-size: 2.5em;
+	}
+
+	.profile .titleIntro{
+		position: relative;
+		flex-direction: column;
+		font-size: 1.2em;
+		padding-bottom: 0.5rem;
+	}
+
+	/*
+	.profile .infoBox{
+		position: relative;
+		flex-direction: column;
+		padding-top: 0.5rem;
+	}
+	*/
+
+	.profile .infoBox dl dt {
+		position: relative;
+		flex-direction: column;
+		padding-top: 3px;
+		font-size: 1.5vw;
+	}
+
+	.profile .infoBox dl dd {
+		position: relative;
+		flex-direction: column;
+		font-size: 1.5vw;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.profile .contactBox {
+		padding-top: 4.5em;
+	}
+
+	.profile .titleBox {
+		padding-left: 4.5rem;
+	}
+
+	.profile .titleName {
+		position: relative;
+		flex-direction: column;
+		font-size: 3.3em;
+	}
+	.profile .titleIntro {
+		position:relative;
+		flex-direction: column;
+		font-size: 1.4em;
+		padding-bottom: 0.5rem;
+	}
+	/*
+	.profile .infoBox {
+		position: relative;
+		flex-direction: column;
+		padding-top: 1vw;
+	}
+	*/
+	.profile .infoBox dl dt {
+		position: relative;
+		flex-direction: column;
+		font-size: 1.9vw;
+	}
+	.profile .infoBox dl dd {
+		position: relative;
+		flex-direction: column;
+		font-size: 1.9vw;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1152px) {
+	.profile .contactBox {
+		padding-top: 6em;
+	}
+	.profile .titleBox {
+		padding-left: 7rem;
+	}
+	.profile .titleName {
+		position: relative;
+		flex-direction: column;
+		font-size: 4em;
+	}
+	.profile .titleIntro{
+		position: relative;
+		flex-direction: column;
+		font-size: 1.8em;
+		padding-bottom: 0.5rem;
+	}
+}
+ /* Portfolio CSS #section2 >> skill
+ * ------------------------------------------------------------------------------ */
+.skillTitle{
+	font-size: 4.5em;
+	font-weight: 700;
+	color: #fff;
+	font-family: 'DM Serif Display';
+}
+.skillIntro{
+	color: rgba(255,255,255, 0.8);
+    font-size: 1em;
+    font-weight: 200;
+    padding-bottom: 3rem;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.chart {
+	justify-content: space-between;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-size: 90%;
+	margin: auto -15px 30px;
+}
+.chart-name{
+	text-align: center;
+	font-size: 1em;
+    font-weight: 600;
+    color: #e6e6e6;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.progress-wrapper {
+	display: none;
+	max-width: 350px;
+	justify-content: space-between;
+	margin: auto;
+	padding: 20px;
+	text-transform: uppercase;
+}
+[type="range"] {
+	width: 200px;
+}
+.chart-box {
+	position: relative;
+	padding: 5px 30px 30px;
+	margin: 20px;
+	width: 260px;
+	height: 306px;
+}
+.chart-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 50px;
+	border-radius: 50%;
+	padding: 2px;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+
+
+ /* Portfolio CSS #section3 >> Utill
+ * ------------------------------------------------------------------------------ */
+.utill{
+	text-align: left !important;
+}
+.utillTitle{
+	font-size: 4.5em;
+	font-weight: 700;
+	color: #999;
+	font-family: 'DM Serif Display';
+}
+.utillIntro{
+	color: #999;
+    font-size: 1em;
+    font-weight: 200;
+    padding-bottom: 2rem;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.progressBar dt{
+	text-transform: uppercase;
+	font-size: 1em;
+    font-weight: 600;
+    color: #999;
+    padding-top: 3rem;
+	padding-bottom: 1rem;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.progressBar dd {
+	width: 100%;
+	background-color: #ddd;
+	border-radius: 25px;
+}
+.progressBar dd span {
+	display: block;
+	height: 20px;
+	background-color: rgb(72, 95, 81);
+	border-radius: 25px;
+	text-align: center;
+	line-height: 20px;
+	color: white;
+	font-size: 9px;
+}
+.gitBar{
+	width: 90%;
+}
+.vsBar{
+	width: 85%;
+}
+.SVN{
+	width: 80%;
+}
+
+
+
+/* Portfolio CSS #section4 >> career-list
+ * ------------------------------------------------------------------------------ */
+.career-list .listTitle{
+	font-size: 4.5em;
+    font-weight: 700;
+    font-family: 'DM Serif Display';
+}
+.career-list .listIntro{
+	font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+	font-family: 'Noto Sans KR',sans-serif;
+	padding-bottom: 3rem;
+}
+.career-list .careerElement{
+	height: 400px;
+	overflow-y: scroll;
+	margin: 0 auto;
+}
+.career-list .careerlistBox{
+	display: block;
+	background: #eee;
+	margin: 20px;
+	padding: 20px;
+}
+.careerlistBox .clickBtn{
+    font-weight: 500;
+    font-family: 'Noto Sans KR',sans-serif;
+}
+.careerlistBox .clickBtn::before{
+	content : '-';
+	color: #485F51;
+	padding: 0 10px;
+}
+
+
+
+/* Portfolio CSS #section5 >> responsive
+ * ------------------------------------------------------------------------------ */
+ .responsive .fp-controlArrow.fp-prev{
+	left: 50px;
+	color: #000;
+}
+.responsive .fp-controlArrow.fp-next{
+	right: 50px;
+}
+.responsive .slide1{
+	background-image: url(../img/logo.JPG);
+}
+.responsive .slide2{
+	background-image: url(../img/ezentel_logo.png);
+}
+.responsive .slide3{
+	background-image: url(../img/bg3.jpg);
+}
+.responsive .slide4{
+	background-image: url(../img/bg4.jpg);
+}
+.responsive .slide5{
+	background-image: url(../img/bg5.jpg);
+}
+
+.link {
+	font-size: 100px;
+}
+
+
+
